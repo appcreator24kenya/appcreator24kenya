@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+
+
+:root {
+    --black: black ;
+    --white:white;
+    --blue:blue;
+    --red:red;
+    --orange:orange;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-title {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    color: hsl(var(--hue-color), 89%, 60%);
+    text-align: center;
+    background-color: var(--white);
+}
+
+
+
+.timeline-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    overflow-x: hidden;
+    background-color: var(--black);
+    
+}
+.timeline-box-container {
+    width: auto;
+}
+.timeline {
+    height:840px;
+    width: 5px;
+    background-color: var(--white);
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.items {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 14px;
+    margin: 100px 20px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-items {
+    width: 200px;
+    margin-left: -220px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.left-items img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    top: -40px;
+    right: -43px;
+    border: 3px solid var(--white);
+    outline: 2px solid var(--white);
+
+
+}
+.right-items {
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.right-items img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    top: -40px;
+    left: -37px;
+    border: 3px solid var(--white);
+    outline: 2px solid var(--white);
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .timeline {
+        height: 800px;
+        margin-top: 80px;
+    }
+
+    .timeline-container {
+        height: auto;
+        justify-content: flex-start;
+        padding:0 30px 150px;
+    }
+
+    .items {
+        margin: 80px 10px 0;
+    
+    }
+
+    .left-items {
+        margin-left: 30px;
+    }
+
+    .left-items img {
+        top: -40px;
+        left: -48px;
+    }
+
+    .right-items {
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    .right-items img {
+        top: -40px;
+        left: -47px;
+    
+    }
+}
